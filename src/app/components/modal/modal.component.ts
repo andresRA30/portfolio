@@ -8,6 +8,7 @@ import { Portfolio } from '../../interfaces/portfolio.interface';
 })
 export class ModalComponent implements OnChanges {
   @Input() portfolio!: Portfolio;
+
   constructor() {
     console.log("wqdieiuhde3ickew")
   }

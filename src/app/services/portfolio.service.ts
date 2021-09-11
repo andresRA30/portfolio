@@ -18,4 +18,9 @@ export class PortfolioService {
     return this.http.get<Portfolio>(`${url}/portfolio/${id}.json`)
   }
 
+  onCreatePost(data: any) {
+    console.log(data)
+    // Send Http request
+    return this.http.post(`${url}/posts.json`, data)
+  }
 }
