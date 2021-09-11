@@ -6,6 +6,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
+import { ComponentModule } from '../components/component.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }
