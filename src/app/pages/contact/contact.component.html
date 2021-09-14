@@ -33,7 +33,7 @@
                     </div>
                     <!-- Phone number input-->
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" formControlName="phone" />
+                        <input class="form-control" id="phone" type="number" placeholder="(123) 456-7890" formControlName="phone" />
                         <div *ngIf="contactForm.controls['phone'].valid" class=" mt-2 alert alert-success" role="alert">
                             Phone correct!
                         </div>
